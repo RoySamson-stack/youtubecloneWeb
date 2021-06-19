@@ -1,3 +1,6 @@
-const API_KEY = ""
+import axios from 'axios'
 
-const re
+const instance = axios.create({
+       baseURL: ""
+})
+export default instance;
