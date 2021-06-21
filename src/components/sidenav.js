@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 export default function SideNav() {
    return (
-      <nav className="relative min-h-screen fixed w-64 flex">
-         <div className="bg-blue-800 w-64 text-black" id="navbarCollapse">
+      <nav className="relative min-h-screen fixed w-64 flex" id="navbarCollapse">
+         <div className="w-64 text-black" >
             <div className="inline-flex h-10">
-               <button className="ml-2 mt-3" onClick="">
+               <button className="ml-2 mt-3" onClick="" id="btn">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor" >
                      <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
                   </svg>
