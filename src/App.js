@@ -1,14 +1,15 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 import SideNav from './components/sidenav'
 import Home from './components/home'
+import NavBar from './components/navbar'
 
 function App() {
   return (
     <BrowserRouter>
       <SideNav/>
+      <NavBar/>
       <Switch>
-        <Route component={Home} path="home" exact />
-        <Route component={Home} path="home" />
+        <Route component={Home} path="/home" exact />
       </Switch>
     </BrowserRouter>
    

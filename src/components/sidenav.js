@@ -1,13 +1,20 @@
 import { NavLink } from 'react-router-dom';
 
 
+
 export default function SideNav() {
    return (
       <nav className="navbar navbar-light fixed-top w-64">
-         <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-         <span className="navbar-toggler-icon navbar-dark"></span>
-         </button>
-        
+         <div className="inline-flex h-10">
+         <button className="navbar-toggler stroke-current text-black" data-toggle="collapse" data-target="#navbarCollapse">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" >
+               <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+            </svg>
+            </button>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.independent.co.uk%2Fs3fs-public%2Fthumbnails%2Fimage%2F2017%2F08%2F30%2F14%2Fyoutube-new-logo.png&f=1&nofb=1"
+            className=" pr-6 pb-6 h-20 w-24 "
+            />
+         </div>
          <div className="collapse navbar-collapse" id="navbarCollapse">
             <ul className="navbar-nav ml-auto pt-4">
                <hr className=""/>
