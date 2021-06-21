@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <SideNav/>
       <NavBar/>
+      <hr className="pr-24 mt-2"/>
       <Switch>
         <Route component={Home} path="/home" exact />
       </Switch>
