@@ -4,12 +4,12 @@ export default function NavBar() {
   return (
 
 
-    <nav className=" inline-flex w-full ml-48 lg:ml-96 mt-6 ">
+    <nav className="top-0 inline-flex w-full ml-48 lg:ml-96 mt-6 ">
       <NavLink
         to="#"
       >
       </NavLink>
-      <div className="inline-flex ml-24">
+      <div className="inline-flex ml-18">
         <input type="text" className="md:w-3/4 lg:w-96 border-2 border-gray-300 pl-2 hover:border-1 hover:border-blue-600" placeholder="Search" />
         <button className="bg-gray-200 w-12 justify-center flex pt-1 hover:bg-gray-300 border-2 border-gray-300">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

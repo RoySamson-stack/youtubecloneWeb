@@ -1,12 +1,12 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
-import SideNav from './components/sidenav'
+import SideBar from './components/sidenav'
 import Home from './components/home'
 import NavBar from './components/navbar'
 
 function App() {
   return (
     <BrowserRouter>
-      <SideNav/>
+      <SideBar/>
       <NavBar/>
       <hr className="pr-24 mt-2"/>
       <Switch>

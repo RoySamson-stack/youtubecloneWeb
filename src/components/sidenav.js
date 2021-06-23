@@ -1,94 +1,46 @@
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SidebarData';
+import './Navbar.css';
+import { IconContext } from 'react-icons';
 
+function SideBar() {
+   const [sidebar, setSidebar] = useState(false);
 
+   const showSidebar = () => setSidebar(!sidebar);
 
-export default function SideNav() {
    return (
-      <nav className="relative min-h-screen fixed w-64 flex" id="navbarCollapse">
-         <div className="w-64 text-black" >
-            <div className="inline-flex h-10">
-               <button className="ml-2 mt-3" onClick="" id="btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor" >
-                     <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                  </svg>
-               </button>
-               <img src="https://www.transparentpng.com/thumb/youtube-logo/hd-youtube-logo-image-5.png"
-                  className="mt-3 ml-4"
-               />
+      <>
+         <IconContext.Provider value={{ color: '#fff' }}>
+            <div className='navbar'>
+               <Link to='#' className='menu-bars'>
+                  <FaIcons.FaBars onClick={showSidebar} />
+               </Link>
             </div>
-            <ul className="mt-6">
-               <hr className=""/>
-               <li className="navbar-item ">
-                  <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 bold mr-6 text-black hover:bg-gray-400 text-decoration:none"
-                  >Home</NavLink>
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Explore</NavLink>
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Subscription</NavLink>
-               </li>
-               <hr/>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Library</NavLink>
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >History</NavLink>
-                  
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Your videos</NavLink>
-               
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Watch later</NavLink>
-               
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Liked Videos</NavLink>
-               
-               </li>
-               <li className="navbar-item">
-                 <NavLink
-                     exact
-                     to="/"
-                     className="items-center mb-6 pr-2 pl-12 mr-6 text-black hover:bg-gray-400"
-                  >Show more</NavLink>
-                  
-               </li>
-            </ul>
-         </div>
-      </nav>
-   )
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+               <ul className='nav-menu-items' onClick={showSidebar}>
+                  <li className='navbar-toggle'>
+                     <Link to='#' className='menu-bars'>
+                        <AiIcons.AiOutlineClose />
+                     </Link>
+                  </li>
+                  {SidebarData.map((item, index) => {
+                     return (
+                        <li key={index} className={item.cName}>
+                           <Link to={item.path}>
+                              {item.icon}
+                              <span>{item.title}</span>
+                           </Link>
+                        </li>
+                     );
+                  })}
+               </ul>
+            </nav>
+         </IconContext.Provider>
+      </>
+   );
 }
+
+export default SideBar;
