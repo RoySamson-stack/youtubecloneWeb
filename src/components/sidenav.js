@@ -9,7 +9,7 @@ export default function SideNav() {
 
    const showSidebar = () => setSidebar(!sidebar)
    return (
-      <nav className="relative min-h-screen fixed w-64 flex" onClick={showSidebar} id="navbarCollapse">
+      <nav className="relative min-h-screen fixed w-64 flex"  id="navbarCollapse">
          <div className="w-64 text-black" >
             <div className="inline-flex h-10">
                <button className="ml-2 mt-3"  id="btn">
@@ -21,7 +21,7 @@ export default function SideNav() {
                   className="mt-3 ml-4"
                />
             </div>
-            <ul className="mt-6">
+            <ul className="mt-6" onClick={showSidebar}>
                <hr className=""/>
                <li className="navbar-item ">
                   <NavLink
