@@ -1,20 +1,15 @@
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
-import SideBar from './components/sidenav'
-import Home from './components/home'
-import NavBar from './components/navbar'
+import Header from './components/Header'
 
 function App() {
   return (
-    <BrowserRouter>
-      <SideBar/>
-      <NavBar/>
-      <hr className="pr-24 mt-2"/>
-      <Switch>
-        <Route component={Home} path="/home" exact />
-      </Switch>
-    </BrowserRouter>
-   
-  );
+    <div>
+      {/*Header*/}
+      <Header />
+   {/*Sidebar*/ }
+      {/*Recommenced video*/}
+    </div>
+  )
 }
 
 export default App;
