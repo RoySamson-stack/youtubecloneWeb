@@ -14,4 +14,8 @@
 }
 .home-name{
   font-size: 150px;
+}.side{
+  flex: 0.2;
+}.rest{
+  flex: 0.8;
 }

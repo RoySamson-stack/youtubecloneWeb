@@ -9,7 +9,7 @@ import Mic from "@material-ui/icons/Mic"
 
 function Header() {
   return (
-    <div className="inline-flex fixed mt-6">
+    <div className="inline-flex sticky top-0 mt-6">
       <div className="flex  ml-6 left-0">
       <MenuIcon className=""/>
       <img src="https://www.transparentpng.com/thumb/youtube-logo/hd-youtube-logo-image-5.png"
@@ -26,7 +26,7 @@ function Header() {
         </button>
         <Mic className="mt-2 ml-6"/>
       </div>
-      <div className="flex flex-wrap justify-right md:space-x-6 lg:space-x-8 sm:pl-8 md:pl-16 lg:pl-96 lg:items-right">
+      <div className="flex inline-flex justify-right md:space-x-6 lg:space-x-8 sm:pl-8 md:pl-16 lg:pl-96 lg:items-right">
       <VideoCallIcon />
       <AppsIcon />
       <NotificationIcon />
