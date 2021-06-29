@@ -1,11 +1,11 @@
 import React from 'react'
 
-function SidebarRow(props) {
+export default function SidebarRow({ Icon, title }) {
    return (
-         <div>
-               
-         </div>
+      <div className="flex items-center">
+         <Icon/>
+         <h1>{title}</h1>
+      </div>
    )
 }
 
-export default SidebarRow
