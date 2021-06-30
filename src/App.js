@@ -2,6 +2,7 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './components/Header'
 import Sidenav from './components/sidenav'
 import Recommended from './components/recommended'
+import Videos from './components/videos'
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
       {/*Header*/}
       <Header />
       <div className="flex">
-       <Sidenav/>
+        <Sidenav />
         <Recommended />
+       <Videos />
       </div>
     </div>
   )
