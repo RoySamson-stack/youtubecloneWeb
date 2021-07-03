@@ -13,7 +13,7 @@ function App() {
         {/*Header*/}
         <Header />
         <Switch>
-          <Route component="" path="/search" exact>
+          <Route component="" path="/search/:searchTerm" exact>
             <div className="flex ">
               <Sidenav />
               <SearchPage />
