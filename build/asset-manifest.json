@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd023ec1.chunk.css",
-    "main.js": "/static/js/main.9680e942.chunk.js",
-    "main.js.map": "/static/js/main.9680e942.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.008a29a4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.008a29a4.js.map",
-    "static/js/2.0ea877d9.chunk.js": "/static/js/2.0ea877d9.chunk.js",
-    "static/js/2.0ea877d9.chunk.js.map": "/static/js/2.0ea877d9.chunk.js.map",
-    "static/js/3.ad4e6adb.chunk.js": "/static/js/3.ad4e6adb.chunk.js",
-    "static/js/3.ad4e6adb.chunk.js.map": "/static/js/3.ad4e6adb.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.dd023ec1.chunk.css.map": "/static/css/main.dd023ec1.chunk.css.map",
-    "static/js/2.0ea877d9.chunk.js.LICENSE.txt": "/static/js/2.0ea877d9.chunk.js.LICENSE.txt"
+    "main.css": "/RoySamson-stack/youtubecloneWebstatic/css/main.dd023ec1.chunk.css",
+    "main.js": "/RoySamson-stack/youtubecloneWebstatic/js/main.9680e942.chunk.js",
+    "main.js.map": "/RoySamson-stack/youtubecloneWebstatic/js/main.9680e942.chunk.js.map",
+    "runtime-main.js": "/RoySamson-stack/youtubecloneWebstatic/js/runtime-main.9a0fd4b1.js",
+    "runtime-main.js.map": "/RoySamson-stack/youtubecloneWebstatic/js/runtime-main.9a0fd4b1.js.map",
+    "static/js/2.0ea877d9.chunk.js": "/RoySamson-stack/youtubecloneWebstatic/js/2.0ea877d9.chunk.js",
+    "static/js/2.0ea877d9.chunk.js.map": "/RoySamson-stack/youtubecloneWebstatic/js/2.0ea877d9.chunk.js.map",
+    "static/js/3.ad4e6adb.chunk.js": "/RoySamson-stack/youtubecloneWebstatic/js/3.ad4e6adb.chunk.js",
+    "static/js/3.ad4e6adb.chunk.js.map": "/RoySamson-stack/youtubecloneWebstatic/js/3.ad4e6adb.chunk.js.map",
+    "index.html": "/RoySamson-stack/youtubecloneWebindex.html",
+    "static/css/main.dd023ec1.chunk.css.map": "/RoySamson-stack/youtubecloneWebstatic/css/main.dd023ec1.chunk.css.map",
+    "static/js/2.0ea877d9.chunk.js.LICENSE.txt": "/RoySamson-stack/youtubecloneWebstatic/js/2.0ea877d9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.008a29a4.js",
+    "static/js/runtime-main.9a0fd4b1.js",
     "static/js/2.0ea877d9.chunk.js",
     "static/css/main.dd023ec1.chunk.css",
     "static/js/main.9680e942.chunk.js"

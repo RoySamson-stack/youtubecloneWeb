@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject", 
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,7 +44,21 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "git-scripts": "^0.4.3",
     "postcss": "^7.0.35",
+    "surge": "^0.23.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoySamson-stack/youtubecloneWeb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoySamson-stack/youtubecloneWeb/issues"
+  },
+  "homepage": "https://github.com/RoySamson-stack/youtubecloneWeb#readme"
 }
